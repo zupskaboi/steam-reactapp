@@ -4,7 +4,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 //Dit is de functie om steam data op te halen van de api link.
 //Hiervoor is de steamtoken die ik heb gekregen plus een steam ID nodig om data te laten zien.
 export const getPlayerSummaries = () => {
-    const playersummaries_endpoint = `http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${process.env.STEAM_TOKEN}&steamids=${process.env.STEAM_ID}`;
+    const playersummaries_endpoint = `http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=61E6FF710E52D8C353B124A3BC175C22&steamids=76561198111088981`;
     return fetch(playersummaries_endpoint, {
         method: "GET",
     });
